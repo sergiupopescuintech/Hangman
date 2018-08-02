@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+
+  #button1{
+
+    padding:1rem 3rem 1rem 3rem;
+    border-radius: 10px;
+    text-align:center;
+    background-color: blue;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #word{
+
+    border: 3px solid black;
+
+    font-size:2rem;
+  }
+  #PlayAgain
+  {
+    display: none;
+  }
+  </style>
+</head>
+<body>
+  <script src="javacod.js">
+  </script>
+  <div class="container">
+    <div class="row">
+      <div class="offset-4 col-4 text-center">
+            <button type="button" onclick="randomword()" id="button1" class="mt-5">
+              Generate
+            </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-4 col-4 text-center">
+        <p id="word" class="mt-5"></p>
+
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="container" id="randuri">
+      <div class="row mb-4 ml-5">
+        <div class="offset-1 col-1">
+            <button  id="q" onclick="checkletter('q',this)" class="w-100"> Q </button>
+          </div>
+        <div class="col-1">
+            <button id="w" onclick="checkletter('w',this)" class="w-100"> w </button>
+          </div>
+        <div class="col-1">
+            <button id="e1" onclick="checkletter('e',this)" class="w-100"> E </button>
+          </div>
+        <div class="col-1">
+            <button id="r" onclick="checkletter('r',this)" class="w-100"> R </button>
+          </div>
+        <div class="col-1">
+            <button id="t" onclick="checkletter('t',this)" class="w-100"> T </button>
+          </div>
+        <div class="col-1">
+            <button id="y" onclick="checkletter('y',this)" class="w-100"> Y </button>
+          </div>
+        <div class="col-1">
+            <button id="u" onclick="checkletter('u',this)" class="w-100"> U </button>
+          </div>
+        <div class="col-1">
+            <button id="i" onclick="checkletter('i',this)" class="w-100"> I </button>
+          </div>
+        <div class="col-1">
+            <button id="o" onclick="checkletter('o',this)" class="w-100"> O </button>
+          </div>
+        <div class="col-1">
+            <button id="p" onclick="checkletter('p',this)" class="w-100"> P </button>
+          </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="offset-2 col-1">
+            <button id="a" onclick="checkletter('a',this)" class="w-100"> A</button>
+          </div>
+        <div class="col-1">
+            <button id="s" onclick="checkletter('s',this)" class="w-100"> S </button>
+          </div>
+        <div class="col-1">
+            <button id="d" onclick="checkletter('d',this)" class="w-100"> D </button>
+          </div>
+        <div class="col-1">
+            <button id="f" onclick="checkletter('f',this)" class="w-100"> F </button>
+          </div>
+        <div class="col-1">
+            <button id="g" onclick="checkletter('g',this)" class="w-100"> G </button>
+          </div>
+        <div class="col-1">
+            <button id="h" onclick="checkletter('h',this)" class="w-100"> H </button>
+          </div>
+        <div class="col-1">
+            <button id="j" onclick="checkletter('j',this)" class="w-100"> J </button>
+          </div>
+        <div class="col-1">
+            <button id="k" onclick="checkletter('k',this)" class="w-100"> K </button>
+          </div>
+        <div class="col-1">
+            <button id="l" onclick="checkletter('l',this)" class="w-100"> L </button>
+          </div>
+
+      </div>
+
+      <div class="row">
+        <div class="offset-3 col-1">
+            <button id="z" onclick="checkletter('z',this)" class="w-100"> Z</button>
+          </div>
+        <div class="col-1">
+            <button id="x" onclick="checkletter('x',this)" class="w-100"> X</button>
+          </div>
+        <div class="col-1">
+            <button id="c" onclick="checkletter('c',this)" class="w-100"> C </button>
+          </div>
+        <div class="col-1">
+            <button id="v" onclick="checkletter('v',this)" class="w-100"> V </button>
+          </div>
+        <div class="col-1">
+            <button id="b" onclick="checkletter('b',this)" class="w-100"> B </button>
+          </div>
+        <div class="col-1">
+            <button id="n" onclick="checkletter('n',this)" class="w-100"> N </button>
+          </div>
+        <div class="col-1">
+            <button id="m" onclick="checkletter('m',this)" class="w-100"> M</button>
+          </div>
+      </div>
+  </div>
+
+    <div class="row">
+        <div class="offset-4 col-5">
+          <img id="poza" src="">
+        </div>
+    </div>
+    <div class="row ">
+
+          <img id="pozafinal" class="w-100" src="">
+
+    </div>
+    <div class="row mt-5 offset-5 col-2 text-center m.x-auto mb-5">
+
+          <button   onclick="refresh()" id="PlayAgain" class="w-100">Play Again</button>
+
+    </div>
+</div>
+
+
+</html>
